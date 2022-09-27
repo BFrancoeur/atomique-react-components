@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: o;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .button-group-wrap  {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 3rem;
+    }
+
+    .trans-wrap-dark-bg {
+        background-color:rgb(33, 68, 38);
+        padding: 3rem;
+    }
+
+    .trans-wrap-light-bg {
+        background-color: rgb(255, 228, 196);
+        padding: 3rem;
+    }
+
+    .col-2 {
+        width: 100%;
+        min-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 1rem;
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+        margin: 0;
+        padding: 0;
+        justify-items: center;
+    }
+
+    .btn {
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1rem;
+        margin: 0;
+        padding: 1rem 1.5rem;
+        background-color: #ccc;
+        border: 1px solid #000;
+        border-radius: .5rem;
+        transition: all .2s;
+    }
+
+    .btn--primary-cta {
+        color: rgb(0, 8, 226);
+        background-color: rgb(184, 190, 247);
+        border: 1px solid rgb(0, 8, 226);
+    }
+
+    .btn--primary-cta:hover{
+        color: rgb(226, 230, 255);
+        background-color: rgb(0, 8, 226);
+        border: 1px solid rgb(0, 8, 226);
+    }
+
+    .btn--primary-cta-light {
+        color: rgb(22, 0, 216);
+        background-color: rgb(232, 232, 255);
+        border: 1px solid rgb(22, 0, 216);
+    }
+
+    .btn--primary-cta-light:hover {
+        color: rgb(232, 232, 255);
+        background-color: rgb(22, 0, 216);
+        border: 1px solid rgb(22, 0, 216);
+    }
+
+
+    .btn--primary-cta-dark {
+        color: rgb(206, 207, 255);
+        background-color: rgb(1, 4, 147);
+        border: 1px solid rgb(1, 4, 147);
+    }
+
+    .btn--primary-cta-dark:hover {
+        color: rgb(1, 4, 147);
+        background-color: rgb(206, 207, 255);
+        border: 1px solid rgb(1, 4, 147);
+    }
+
+    .btn--secondary-cta {
+        color: rgb(44, 27, 0);
+        background-color: rgb(255, 174, 0);
+        border: 1px solid rgb(44, 27, 0);
+    }
+
+    .btn--secondary-cta:hover{
+        color: rgb(255, 174, 0);
+        background-color: rgb(44, 27, 0);
+        border: 1px solid rgb(44, 27, 0);
+    }
+
+    .btn--secondary-cta-light {
+        color: rgb(40, 28, 0);
+        background-color: rgb(255, 207, 74);
+        border: 1px solid rgb(40, 28, 0);
+    }
+
+    .btn--secondary-cta-light:hover {
+        color: rgb(255, 207, 74);
+        background-color: rgb(40, 28, 0);
+        border: 1px solid rgb(40, 28, 0);
+    }
+
+
+    .btn--secondary-cta-dark {
+        color: rgb(255, 207, 74);
+        background-color: rgb(40, 28, 0);
+        border: 1px solid rgb(40, 28, 0);
+    }
+
+    .btn--secondary-cta-dark:hover {
+        color: rgb(40, 28, 0);
+        background-color: rgb(255, 207, 74);
+        border: 1px solid rgb(40, 28, 0);
+    }
+
+    .btn--secondary-cta-light-trans {
+        color: #fff;
+        background-color: transparent;
+        border: 1px solid #fff;
+    }
+
+    .btn--secondary-cta-light-trans:hover {
+        color: #000;
+        background-color: #fff;
+        border: 1px solid #fff;
+    }
+
+
+    .btn--secondary-cta-dark-trans {
+        color: #000;
+        background-color: transparent;
+        border: 1px solid #000;
+    }
+
+    .btn--secondary-cta-dark-trans:hover {
+        color: #fff;
+        background-color: #000;
+        border: 1px solid rgb(40, 28, 0);
+    }
+</style>
+<body>
+    <div class="container button-container">
+        <div class="button-group-wrap">
+            <button class="btn">
+                Base Button
+            </button>
+
+            <button class="btn btn--base-light">
+                Base Button Light
+            </button>
+
+            <button class="btn btn-base-dark">
+                Base Button Dark
+            </button>
+        </div>
+        
+        <div class="button-group-wrap">
+            <button class="btn btn--primary-cta">
+                Primary CTA Button
+            </button>
+            <button class="btn btn--primary-cta-light">
+                Primary CTA Button Light
+            </button>
+            <button class="btn btn--primary-cta-dark">
+                Primary CTA Button Dark
+            </button>
+        </div>
+
+        <div class="button-group-wrap">
+            <button class="btn btn--secondary-cta">
+                Secondary CTA Button
+            </button>
+
+            <button class="btn btn--secondary-cta-light">
+                Secondary CTA Button Light
+            </button>
+
+            <button class="btn btn--secondary-cta-dark">
+                Secondary CTA Button Dark
+            </button>
+        </div>
+
+        <div class="button-group-wrap col-2">
+
+            <div class="trans-wrap-light-bg">
+                <button class="btn btn--secondary-cta-dark-trans">
+                    Secondary CTA Button Dark Transparent
+                </button>
+            </div>
+
+            <div class="trans-wrap-dark-bg">
+                <button class="btn btn--secondary-cta-light-trans">
+                    Secondary CTA Button Light Transparent
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
